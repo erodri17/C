@@ -1,6 +1,6 @@
 /**
  * Name: program6.c
- * Purpose: Calculating teh Broker's Commission
+ * Purpose: Calculating the Broker's Commission
  */
 
 /*Broker's charges amounts shown in the following table*/
