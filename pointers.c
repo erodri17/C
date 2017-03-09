@@ -1,54 +1,34 @@
-/*
-    pointers.c
-    Purpose: Show the use of Arithmetic Operations and the use of Pointers in C
-    @author Elmer Rodriguez
-    @version 1.0 01/13/2017
 
- */
 
-// code is not compiling
 
-#include <stdio.h>
-void lar(int*, int* int*);
-void main()
+/*Code Example: C-Pointers*/
+#include < stdio.h >
+int main()
 {
-    //declaring intergers variables
-    int x,y lar;
+char lead;
+ char *sidekick;
+ lead = 'A'; /* initialize char variable */
+ sidekick = &lead; /* initialize pointer IMPORTANT! */
+ printf(" About variable 'lead':\ n");
+  printf(" Size\ t\ t% ld\ n", sizeof( lead));
+  printf(" Contents\ t% c\ n", lead);
+  printf(" Location\ t% p\ n",& lead);
+  printf(" And variable 'sidekick':\ n");
+   printf(" Contents\ t% p\ n", sidekick);
+    return( 0);
+    }
 
-    //asking the user to enter the x and y values
-    printf(“Enter the value of x and y:”);
 
-    //scanning the input of the user
-    scanf(“%d%d”, &x,&y);
 
-    //printing the results
-    printf(“&x=%u\n&y=%u\n and large=%u”, &x,&y,&lar);
-    lar(&x, &y,&lar);
-    printf(“Larger number is %d”, lar);
-}
+    /*Output of this program*/
+    /*
+    About variable 'lead':
+    Size 1
+    Contents A
+    Location 0x7fff5fbff8ff
+    And variable 'sidekick':
+    Contents 0x7fff5fbff8ff
+    */
+Gookin, Dan (2013-10-10). Beginning Programming with C For Dummies (Kindle Locations 7414-7420). Wiley. Kindle Edition.
 
-//this functions demonstrate the use of pointers
-void lar(int *a, int *b ,int*c)
-{
-    printf(“a=%u\nb=%u\nc=%u\n”,a,b,c);
-    if(*a>*b)
-        *c=*a;
-    else
-        *c=*b;
-}
-
-/*
-Sample OUTPUT:
-
-Enter the value of x and y: 10, 50
-&x = 65524
-&y=65522
-&lar=65520
-a=65524
-b=65522
-c=65520
-Larger number is 50
-
-*/
-
-// Source: http://www.codewithc.com/understanding-c-pointers-beginners-guide
+/*Gookin, Dan (2013-10-10). Beginning Programming with C For Dummies (Kindle Locations 7403-7409). Wiley. Kindle Edition. */
